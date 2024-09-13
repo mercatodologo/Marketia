@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketIA - Marketing para PYMES</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Evita el desplazamiento horizontal */
+        }
+        /* Estilos generales */
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        /* Encabezado */
+        #header {
+            background: linear-gradient(135deg, #6A1B9A, #00ACC1);
+        }
+        #header div {
+            max-width: 100%;
+            padding: 0 20px; /* Añadimos padding para que no quede pegado en móvil */
+        }
+        #header img {
+            max-width: 80%; /* Ajusta según sea necesario */
+            height: auto;
+        }
+        #header p {
+            margin: 10px 0 0;
+            font-size: 1.5rem;
+        }
+        /* Responsividad */
+        @media (max-width: 768px) {
+            #header p {
+                font-size: 1.2rem;
+                white-space: normal; /* Permite el salto de línea en móvil */
+            }
+            #header div {
+                padding: 0 40px; /* Añade más espacio en los bordes para la versión móvil */
+            }
+        }
+        /* Descripción del marketing digital */
+        #marketing-digital {
+            background: url('https://res.cloudinary.com/dorpale7w/image/upload/v1726160701/Dise%C3%B1o_sin_t%C3%ADtulo_fikeu2.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed; /* Para efecto parallax en pantallas grandes */
+        }
+        #marketing-digital p {
+            font-size: 1.8rem;
+            background-color: rgba(0, 0, 0, 0.3); /* Opacidad reducida para que sea más claro */
+            padding: 40px; /* Incrementar el padding para dar más espacio */
+            border-radius: 10px;
+            max-width: 90%; /* Limitar el ancho del texto para que no ocupe toda la pantalla */
+            margin: 0 auto; /* Centramos el recuadro */
+        }
+        @media (max-width: 768px) {
+            #marketing-digital p {
+                font-size: 1.5rem;
+                padding: 20px; /* Relleno ajustado en móvil */
+            }
+        }
+        /* Servicios */
+        #services {
+            background: linear-gradient(135deg, #00ACC1, #6A1B9A);
+        }
+        #services h2 {
+            font-size: 3rem;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centramos los recuadros */
+        }
+        .service-box {
+            display: inline-block;
+            width: 30%; /* Ajusta el ancho según sea necesario */
+            margin: 20px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+        .cta-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #6A1B9A;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        /* Responsividad para servicios */
+        @media (max-width: 768px) {
+            .service-box {
+                width: 80%; /* Ajustamos a un tamaño más adecuado para móvil */
+            }
+        }
+        /* Ventajas */
+        #advantages {
+            background: url('https://res.cloudinary.com/dorpale7w/image/upload/v1726164314/Dise%C3%B1o_sin_t%C3%ADtulo_2_f0s5wu.jpg') no-repeat center center/cover;
+            background-attachment: fixed; /* Efecto parallax */
+        }
+        #advantages ul {
+            font-size: 1.8rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%; /* Limitar el ancho del texto para que no ocupe toda la pantalla */
+            margin: 0 auto; /* Centramos el recuadro */
+        }
+        @media (max-width: 768px) {
+            #advantages ul {
+                font-size: 1.5rem;
+                padding: 15px; /* Ajustar el padding en móvil */
+            }
+        }
+        /* Contacto */
+        #contact {
+            background: linear-gradient(135deg, #6A1B9A, #00ACC1);
+        }
+        #contact h2 {
+            font-size: 3rem;
+        }
+        #contact p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <section id="header" class="section">
+        <div>
+            <img src="https://res.cloudinary.com/dorpale7w/image/upload/v1725935287/Logo_m30rlm.svg" alt="MarketIA Logo">
+            <p>Agencia de marketing para pequeños negocios con alto potencial</p>
+        </div>
+    </section>
+
+    <!-- Importancia del Marketing Digital -->
+    <section id="marketing-digital" class="section">
+        <div>
+            <p>El marketing digital es la clave para conectar con tus clientes de manera efectiva y generar resultados que impulsen el crecimiento de tu negocio.</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="section">
+        <div>
+            <h2>Nuestros Servicios</h2>
+            <div class="service-container">
+                <div class="service-box">
+                    <h3>Publicidad Digital</h3>
+                    <a href="#contact" class="cta-button">Más Información</a>
+                </div>
+                <div class="service-box">
+                    <h3>Desarrollo Web</h3>
+                    <a href="#contact" class="cta-button">Más Información</a>
+                </div>
+                <div class="service-box">
+                    <h3>Gestión de RRSS</h3>
+                    <a href="#contact" class="cta-button">Más Información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventajas -->
+    <section id="advantages" class="section">
+        <div>
+            <ul>
+                <li>Precios accesibles para pequeños negocios</li>
+                <li>Enfoque personalizado</li>
+                <li>Resultados medibles</li>
+                <li>Equipo especializado en pequeñas empresas</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section id="contact" class="section">
+        <div>
+            <h2>Contáctanos</h2>
+            <p>Email: contacto@marketia.com</p>
+            <p>Teléfono: +123 456 7890</p>
+        </div>
+    </section>
+</body>
+</html>
